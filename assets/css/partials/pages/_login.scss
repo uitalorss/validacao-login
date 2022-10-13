@@ -1,0 +1,50 @@
+@import '../variables';
+
+.container{
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+  .content{
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    color: $light;
+    .intro{
+      width: 50%;
+      margin: 0 auto 7rem auto;
+      .intro__title{
+        font-size: 3.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .intro__subtitle{
+        width: 70%;
+      }
+    }
+
+    .login{
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .login__button{
+        background: $linear-red;
+        padding: 1.5rem;
+        border-radius: 50px;
+        border: none;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: $light;
+        cursor: pointer;
+        box-shadow: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+      }
+    }
+  }
+  .ilustration{
+    background: url(../../../../assets/img/bg-login.png) no-repeat;
+    background-size: cover;
+    width: 50vw;
+  }
+}
