@@ -22,10 +22,10 @@
       </div>
       <form class="login" onsubmit="entrar(event)">
         <span class="login__title">Login</span>
-        <div class="input-login">
+        <div data-form="form" class="input-login">
           <input data-form="user" type="text" class="input-login__user warning" placeholder="Usuário">
           <input data-form="password" type="password" class="input-login__password warning" placeholder="Senha">
-          <span class="message-warning">Ops, usuário ou senha inválidos. Tente novamente!</span>
+          <span data-form="message-warning" class="message-warning"></span>
         </div>
         <button type="submit" data-form="button" class="login__button">Continuar</button>
       </form>

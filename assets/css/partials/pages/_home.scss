@@ -29,12 +29,19 @@
         flex-direction: column;
         .header-info-weather__city{
           font-size: .875rem;
+          text-align: center;
         }
-        .header-info-weather__weather{
-          font-size: 3rem;
-          font-weight: 700;
-          align-self: flex-end;
+        .info-weather{
+          display: flex;
+          align-items: center;
+          gap: 0 .5rem;
+          .header-info-weather__weather{
+            font-size: 3rem;
+            font-weight: 700;
+            align-self: flex-end;
+          }
         }
+
       }
     }
 

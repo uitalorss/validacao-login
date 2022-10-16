@@ -26,13 +26,20 @@ p{
 input{
   background: transparent;
   padding: 1.25rem;
-  border: 1px solid $light;
+  border: 2px solid $light;
   border-radius: 50px;
   outline: none;
   color: $light;
   &::placeholder{
     color: $light;
   }
+}
+
+.anchor{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .waring{
