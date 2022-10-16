@@ -2,19 +2,29 @@ const entrar = (event) => {
   event.preventDefault();
   let inputUser = document.querySelector('[data-form="user"]');
   let inputPassword = document.querySelector('[data-form="password"]');
-
+  let messageWarning = document.querySelector('[data-form="message-warning"]');
   userValid = {
     user: 'admin',
     password: 'admin'
   }
 
-  if(inputUser.value === userValid.user && inputPassword.value === userValid.password){
+  if(inputUser.value === '' || inputPassword.value === ''){
+    messageWarning.textContent = `Preencha todos os campos`;
+  }else{
+    if(inputUser.value === userValid.user && inputPassword.value === userValid.password){
     window.location.href = 'home.html';
     let token = Math.random().toString(16).substring(2);
     localStorage.setItem('token', token);
   }else{
-    console.log("Usuário ou senha incorretos")
+    clearFields();
+    messageWarning.textContent = `Ops, usuário ou senha inválidos. Tente novamente!`;
   }
+}
+
+function clearFields(){
+  inputUser.value = '';
+  inputPassword.value = '';
+}
 }
 
 const sair = () => {
