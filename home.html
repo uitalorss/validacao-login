@@ -56,20 +56,22 @@
         <div class="footer-actions">
           <span class="footer-actions__label">Application in refresh</span>
           <div class="footer-actions__counter">
-            <span class="footer-actions__counter--count">600</span>
+            <span data-home="countdown" class="footer-actions__counter--count">10</span>
             <span class="footer-actions__counter--info">seconds</span>
           </div>
           <div></div>
           <div class="footer-actions__buttons footer-actions__buttons--navigation">
-            <a class="anchor button__navigation" href="http://www.uol.com.br">Continuar Navegando</a>
+            <button onclick="anchor(event)" class="anchor button__navigation" href="http://www.uol.com.br">Continuar Navegando</button>
           </div>
           <div class="footer-actions__buttons footer-actions__buttons--logout">
-            <a class="anchor button__logout" href="index.html">Logout</a>
+            <button onclick="sair(event)" class="anchor button__logout" href="index.html">Logout</button>
           </div>
         </div>
       </footer>
     </div>
   </section>
+  <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
