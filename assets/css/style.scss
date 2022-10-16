@@ -6,8 +6,13 @@ body{
   font-size: 16px;
 }
 
-h1, h2, h3, h4, p, input{
+h1, h2, h3, h4, h5, h6, p, input, span{
   font-family: 'Poppins', sans-serif;
+}
+
+a{
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 h3{
@@ -28,4 +33,8 @@ input{
   &::placeholder{
     color: $light;
   }
+}
+
+.waring{
+  border: 1px solid $yellow;
 }

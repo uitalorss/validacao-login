@@ -1,1 +1,137 @@
 @import '../variables';
+
+.container-home{
+  background: linear-gradient(105.96deg, $white 0%, #F0F0F0 97.86%);
+  .content-home{
+    width: 100vw;
+    height: 100vh;
+    background: url(../../../../assets/img/bola-logo-compass.png);
+    background-repeat: no-repeat;
+    background-position: -20vw 20vh;
+    .header-home{
+      padding: 1.5rem 2.5rem 0 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .header-info-time{
+        text-align: center;
+        .header-info__hour{
+          font-size: 7rem;
+          font-weight: 700;
+        }
+        .header-info__date{
+          font-size: .875rem;
+        }
+      }
+
+      .header-info-weather{
+        display: flex;
+        flex-direction: column;
+        .header-info-weather__city{
+          font-size: .875rem;
+        }
+        .header-info-weather__weather{
+          font-size: 3rem;
+          font-weight: 700;
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .speach{
+      display: flex;
+      flex-direction: column;
+      margin: 3rem 7rem;
+      text-align: right;
+      .speach__en--md{
+        font-size: 2rem;
+        font-weight: 700;
+        color: $red;
+      }
+      .speach__en--lg{
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 700;
+        color: $red;
+      }
+      .speach__br{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+      }
+    }
+
+    .footer{
+      position: absolute;
+      bottom: 0;
+      background: $linear-dark;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .footer-description{
+        margin: 2rem 2.5rem 2rem 15rem;
+        display: flex;
+        position: relative;
+        p{
+          color: $white;
+          font-size: .625rem;
+          line-height: 1.125rem;
+          text-align: right;
+        }
+        &:after{
+          content: '';
+          border-left: 1px solid $white;
+          height: 150%;
+          margin-left: 2rem;
+          margin-top: -.5rem;
+        }
+      }
+
+      .footer-actions{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+        align-items: center;
+        .footer-actions__label{
+          text-align: right;
+          font-size: .875rem;
+          margin-right: 1rem;
+          color: $white;
+        }
+        .footer-actions__counter{
+          display: grid;
+          .footer-actions__counter--count{
+            color: $white;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+          }
+          .footer-actions__counter--info{
+            color: $white;
+            text-align: center;
+            font-size: .875rem;
+          }
+        }
+        .footer-actions__buttons{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .anchor{
+            text-align: center;
+            font-size: .75rem;
+            line-height: 1rem;
+            width: 80%;
+          }
+          .button__navigation{
+            color: $red-200;
+          }
+          .button__logout{
+            color: $white;
+          }
+        }
+
+        .footer-actions__buttons--navigation{
+          background: $white;
+        }
+      }
+    }
+  }
+}

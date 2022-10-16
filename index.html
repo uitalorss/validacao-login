@@ -21,14 +21,17 @@
         <p class="intro__subtitle">Para continuar navegando de forma segura, efetue o login na rede.</p>
       </div>
       <form class="login">
-        <h3 class="login__title">Login</h3>
-        <input type="text" class="login__user" placeholder="Usuário">
-        <input type="password" class="login__password" placeholder="Senha">
-        <button class="login__button">Continuar</button>
+        <span class="login__title">Login</span>
+        <div class="input-login">
+          <input data-form="input" type="text" class="input-login__user warning" placeholder="Usuário">
+          <input data-form="password" type="password" class="input-login__password warning" placeholder="Senha">
+          <span class="message-warning">Ops, usuário ou senha inválidos. Tente novamente!</span>
+        </div>
+        <button type="submit" data-form="button" class="login__button">Continuar</button>
       </form>
     </div>
     <div class="ilustration">
-
+      <img class="ilustration__logo" src="./assets/img/logo-compass-white.svg" alt="">
     </div>
   </div>
 </body>

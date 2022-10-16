@@ -1,2 +1,16 @@
 $light: #E0E0E0;
 $linear-red: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+$linear-dark: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+$red: #C12D18;
+$red-200: #C13216;
+$white: #ffffff;
+$yellow: #E9B425;
+
+@mixin buttons-footer($color){
+  background: $color;
+  font-size: .75rem;
+  width: 130px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
