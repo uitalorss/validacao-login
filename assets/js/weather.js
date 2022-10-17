@@ -27,7 +27,6 @@
   function showInfoWeather(response){
     const infoArea = document.querySelector('[data-home="info-location-weather"]');
     const weatherArea = document.createElement("div");
-
     let infoCity = document.createElement("p");
     let weather = document.createElement("h5");
     let icon = document.createElement("img");

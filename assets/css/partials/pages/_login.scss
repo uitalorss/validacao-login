@@ -36,6 +36,22 @@
         flex-direction: column;
         gap: 2rem;
         margin-bottom: 5rem;
+        .input-login__user{
+          display: flex;
+          align-items: center;
+          &:after{
+            content: url(../../../../assets/img/user.svg);
+            margin-left: 1rem;
+          }
+        }
+        .input-login__password{
+          display: flex;
+          align-items: center;
+          &:after{
+            content: url(../../../../assets/img/lock.svg);
+            margin-left: 1rem;
+          }
+        }
       }
       .login__button{
         background: $linear-red;

@@ -30,6 +30,7 @@ input{
   border-radius: 50px;
   outline: none;
   color: $light;
+  width: 100%;
   &::placeholder{
     color: $light;
   }

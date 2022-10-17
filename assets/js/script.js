@@ -10,6 +10,8 @@ const entrar = (event) => {
 
   if(inputUser.value === '' || inputPassword.value === ''){
     messageWarning.textContent = `Preencha todos os campos`;
+    inputUser.style.borderColor = "#E9B425";
+    inputPassword.style.borderColor = "#E9B425";
   }else{
     if(inputUser.value === userValid.user && inputPassword.value === userValid.password){
     window.location.href = 'home.html';
@@ -17,6 +19,8 @@ const entrar = (event) => {
     localStorage.setItem('token', token);
   }else{
     clearFields();
+    inputUser.style.borderColor = "#E9B425";
+    inputPassword.style.borderColor = "#E9B425";
     messageWarning.textContent = `Ops, usuário ou senha inválidos. Tente novamente!`;
   }
 }
