@@ -39,9 +39,20 @@
         .input-login__user{
           display: flex;
           align-items: center;
+          position: relative;
           &:after{
             content: url(../../../../assets/img/user.svg);
             margin-left: 1rem;
+          }
+        }
+        .input-login__user--special{
+          display: flex;
+          align-items: center;
+          position: relative;
+          &:after{
+            content: url(../../../../assets/img/user.svg);
+            position: absolute;
+            right: 20px;
           }
         }
         .input-login__password{
@@ -50,6 +61,16 @@
           &:after{
             content: url(../../../../assets/img/lock.svg);
             margin-left: 1rem;
+          }
+        }
+        .input-login__password--special{
+          display: flex;
+          align-items: center;
+          position: relative;
+          &:after{
+            content: url(../../../../assets/img/user.svg);
+            position: absolute;
+            right: 20px;
           }
         }
       }
