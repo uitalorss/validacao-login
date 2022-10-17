@@ -26,7 +26,7 @@
 
       .header-info-weather{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         .header-info-weather__city{
           font-size: .875rem;
           text-align: center;

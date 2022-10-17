@@ -1,5 +1,7 @@
   window.addEventListener("load", geolocation);
   const infoArea = document.querySelector('[data-home="info-location-weather"]');
+  const weatherArea = document.createElement("div");
+  weatherArea.classList.add("info-weather")
 
   
   function geolocation(){
@@ -10,8 +12,8 @@
         let latitude = position.coords.latitude.toFixed(2)
         let longitude = position.coords.longitude.toFixed(2)
         console.log(latitude, longitude)
-        showLocation(latitude, longitude)
         showCity(latitude, longitude);
+        showLocation(latitude, longitude)
       })
     }
   }
@@ -37,12 +39,11 @@
   }
 
   function showInfoWeather(response){
-    const weatherArea = document.createElement("div");
     let weather = document.createElement("h5");
     let icon = document.createElement("img");
     icon.src = response.current.condition.icon;
     weather.classList.add("header-info-weather__weather");
-    weatherArea.classList.add("info-weather")
+
     weather.innerHTML = `${response.current.temp_c}°`;
     infoArea.appendChild(weatherArea);
     weatherArea.appendChild(icon)
