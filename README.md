@@ -5,18 +5,17 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/uitalorss/validacao-login?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/uitalorss/validacao-login?style=for-the-badge)
 ![Last Commit](https://img.shields.io/github/last-commit/uitalorss/validacao-login?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+![Contributors](https://img.shields.io/github/contributors/uitalorss/validacao-login?style=for-the-badge)
 
 <img src="./assets/img/capa-readme.png" alt="Imagem do projeto">
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> Projeto desenvolvido na Sprint 4 do programa de Bolsas Front-end da Compass.uol, que simula uma validação e autenticação de usuário da empresa e, sendo devidamente autenticado, é levado a uma tela padrão, onde tem informações em tempo real e um contador que monitora o tempo de atividade de usuário.
 
 ## Requisitos pedidos no desafio
 
 - [x] Autenticação de usuário
 - [x] Informações de data e hora em tempo real
-- [x] Informações da cidade de onde a pessoa está acessando e sua respectiva temperatura
+- [x] Informações da cidade de onde a pessoa está acessando e sua respectiva temperatura atual
 - [x] Contador regressivo para possível encerramento de sessão.
 - [x] Botões de encerramento de sessão e âncora para outra página
 
