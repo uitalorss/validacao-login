@@ -16,7 +16,7 @@
       .header-info-time{
         text-align: center;
         .header-info__hour{
-          font-size: 7rem;
+          font-size: max(5rem, 5.83vw);
           font-weight: 700;
         }
         .header-info__date{
@@ -51,19 +51,19 @@
       margin: 3rem 7rem;
       text-align: right;
       .speach__en--md{
-        font-size: 2rem;
+        font-size: max(1.75rem, 1.875vw);
         font-weight: 700;
         color: $red;
       }
       .speach__en--lg{
-        font-size: 3rem;
-        line-height: 3.5rem;
+        font-size: max(2rem, 3.33vw);
+        line-height: max(2.5rem, 3.63vw);
         font-weight: 700;
         color: $red;
       }
       .speach__br{
         font-size: 1rem;
-        margin-bottom: .5rem;
+        margin-bottom: .75rem;
       }
     }
 
@@ -74,7 +74,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       .footer-description{
-        margin: 2rem 2.5rem 2rem 15rem;
+        margin: 1.5rem 2.5rem 1.5rem 15rem;
         display: flex;
         position: relative;
         p{
@@ -132,6 +132,7 @@
           }
           .button__logout{
             color: $white;
+            font-weight: 700;
           }
         }
 
