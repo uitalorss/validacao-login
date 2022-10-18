@@ -11,7 +11,6 @@
       navigator.geolocation.getCurrentPosition((position) => {
         let latitude = position.coords.latitude.toFixed(2)
         let longitude = position.coords.longitude.toFixed(2)
-        console.log(latitude, longitude)
         showCity(latitude, longitude);
         showLocation(latitude, longitude)
       })
@@ -28,6 +27,9 @@
       const infoCity = response.data;
       showInfoCity(infoCity)
     })
+    .catch((error) => {
+      console.error(error)
+    })
   }
 
   function showLocation(lat, long){
@@ -36,6 +38,9 @@
       const infoWeather = response.data;
       showInfoWeather(infoWeather)
     })
+    .catch((error) => {
+      console.error(error)
+    })
   }
 
   function showInfoWeather(response){
@@ -43,7 +48,6 @@
     let icon = document.createElement("img");
     icon.src = response.current.condition.icon;
     weather.classList.add("header-info-weather__weather");
-
     weather.innerHTML = `${response.current.temp_c}°`;
     infoArea.appendChild(weatherArea);
     weatherArea.appendChild(icon)
