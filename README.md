@@ -27,11 +27,12 @@
 
 ### Extras
 
-- Metodologia BEM para estilização
-- Geolocalização
+- Metodologia BEM para melhorar a leitura das classes para estilização
+- Informações extraídas para tratamento no JS através de data-attributes
+- Uso de Geolocalização
 - [Weather API para consumo de informações de clima](https://www.weatherapi.com);
 
-## 📫 Contribuindo para <nome_do_projeto>
+## 📫 Para contribuir com o projeto
 
 Para contribuir com o projeto de validação e autenticação de login, siga estas etapas:
 
