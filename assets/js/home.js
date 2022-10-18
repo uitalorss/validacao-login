@@ -4,8 +4,12 @@ if(localStorage.getItem('token') === null){
 }
 
 const sair = () => {
-  localStorage.removeItem('token');
-  window.location.href = 'index.html'
+  if(confirm("Deseja salvar informações para a próxima sessão?") === true){
+    window.location.href = 'index.html'
+  }else{
+    localStorage.removeItem('token');
+    window.location.href = 'index.html'
+  }
 }
 
 const anchor = (event) => {
