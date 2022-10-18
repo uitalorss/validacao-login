@@ -2,19 +2,19 @@
 
 .container{
   display: flex;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
   .logo{
     display: none;
   }
   .content{
     width: 50vw;
-    height: 80vh;
+    height: 100vh;
     margin: auto;
     color: $light;
     .intro{
       width: 50%;
-      margin: 0 auto max(2.5rem, 3.33vw) auto;
+      margin: 3rem auto max(2.5rem, 3.33vw) auto;
       .intro__title{
         font-size: max(2.75rem, 3.125vw);
         margin-bottom: 1rem;
@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        margin-bottom: max(2rem, 4vw);
+        margin-bottom: max(1rem, 3vw);
         .input-login__user{
           display: flex;
           align-items: center;
