@@ -144,20 +144,58 @@
   }
 }
 
-@media only screen and(max-width: 840px){
+@media only screen and(max-width: 1180px){
   .container-home{
     .content-home{
       background-position: -50vw 40vh;
+      .footer{
+        grid-template-columns: 1fr 1fr;
+        .footer-description{
+          margin: 1.5rem 2.5rem 1.5rem 2.5rem;
+
+        }
+        .footer-actions{
+          padding: .25rem 0;
+          grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+          .footer-actions__label{
+            font-size: .75rem;
+          }
+          .footer-actions__counter{
+            .footer-actions__counter--count{
+              color: $white;
+              font-size: 2rem;
+            }
+            .footer-actions__counter--info{
+              font-size: .75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 840px){
+  .container-home{
+    .content-home{
+      background-position: -80vw 60vh;
       .speach{
         margin: 3rem;
       }
 
       .header-home{
         align-items: center;
+        display: grid;
+        grid-template-areas: 
+        "logo logo"
+        "info-time info-weather";
+        
         .header-home__logo{
-          display: none;
+          grid-area: logo;
+          margin: 0 auto 1rem auto;
         }
         .header-info-time{
+          grid-area: info-time;
           .header-info__hour{
             font-size: max(3.5rem, 8.5vw);
           }
@@ -167,14 +205,41 @@
             width: 100%;
           }
         }
+        .header-info-weather{
+          grid-area: info-weather;
+        }
       }
 
       .footer{
         grid-template-columns: 1fr;
         .footer-description{
-
           display: none;
         }
+        .footer-actions{
+          padding: .25rem 0;
+          grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+          .footer-actions__label{
+            font-size: .75rem;
+          }
+          .footer-actions__counter{
+            .footer-actions__counter--count{
+              color: $white;
+              font-size: 2rem;
+            }
+            .footer-actions__counter--info{
+              font-size: .75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 680px){
+  .container-home{
+    .content-home{
+      .footer{
         .footer-actions{
           padding: .25rem 0;
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -184,10 +249,38 @@
   }
 }
 
+@media only screen and(max-width: 570px){
+  .container-home{
+    .content-home{
+      .footer{
+        .footer-actions{
+          padding: .25rem 0;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          .space{
+            display: none;
+          }
+          .footer-actions__label{
+            font-size: .75rem;
+          }
+          .footer-actions__counter{
+            .footer-actions__counter--count{
+              color: $white;
+              font-size: 2rem;
+            }
+            .footer-actions__counter--info{
+              font-size: .75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and(max-width: 480px){
   .container-home{
     .content-home{
-      background-position: -125vw 40vh;
+      background: none;
       .speach{
         margin: 3rem 1rem;
       }
@@ -211,7 +304,38 @@
         }
         .footer-actions{
           padding: .25rem 1rem;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          .space{
+            display: none;
+          }
+          .anchor{
+            font-size: .625rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 380px){
+  .container-home{
+    .content-home{
+      .footer{
+        grid-template-columns: 1fr;
+        .footer-description{
+
+          display: none;
+        }
+        .footer-actions{
+          padding: .25rem 0;
+          grid-template-columns: 1fr 1fr 1fr;
+          .space{
+            display: none;
+          }
+          .footer-actions__label{
+            display: none;
+          }
           .anchor{
             font-size: .625rem;
             margin: 0;
