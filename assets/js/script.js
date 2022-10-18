@@ -33,9 +33,6 @@ const entrar = (event) => {
     inputUser.value = '';
     inputPassword.value = '';
   }
-
-
-
 }
 
 inputUser.addEventListener('input', (e) => {
@@ -59,3 +56,4 @@ inputPassword.addEventListener('input', (e) => {
     divPassword.classList.add("input-login__user")
   }
 })
+
