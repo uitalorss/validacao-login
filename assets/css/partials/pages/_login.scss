@@ -41,6 +41,7 @@
           align-items: center;
           position: relative;
           &:after{
+            transition: .3s ease-out;
             content: url(../../../../assets/img/user.svg);
             margin-left: 1rem;
           }
@@ -50,6 +51,7 @@
           align-items: center;
           position: relative;
           &:after{
+            transition: .3s ease-in;
             content: url(../../../../assets/img/user.svg);
             position: absolute;
             right: 20px;
@@ -59,6 +61,7 @@
           display: flex;
           align-items: center;
           &:after{
+            transition: .2s ease-out;
             content: url(../../../../assets/img/lock.svg);
             margin-left: 1rem;
           }
@@ -68,6 +71,7 @@
           align-items: center;
           position: relative;
           &:after{
+            transition: .2s ease-out;
             content: url(../../../../assets/img/user.svg);
             position: absolute;
             right: 20px;
